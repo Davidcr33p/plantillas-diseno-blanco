@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contorno Arquitectura, plantilla Estudio Mosaico</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23141414'/%3E%3Ctext x='50' y='64' font-size='40' font-family='Arial, sans-serif' font-weight='700' fill='%232f6c86' text-anchor='middle'%3ECA%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Estudio de arquitectura enfocado en proyectos residenciales, comerciales e interiorismo." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <div id="scroll-sentinel" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">CA</span>
+        <span class="brand-name">Contorno Arquitectura</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
+        <ul id="nav-list"></ul>
+      </nav>
+
+      <a class="header-templates-link" href="../../plantillas.html">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+        <span>Plantillas</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="icon icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></svg>
+        <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul id="mobile-nav-list"></ul>
+      <a class="mobile-templates-link" href="../../plantillas.html">Ver otras plantillas</a>
+    </div>
+  </header>
+
+  <main id="main" class="mosaic">
+
+    <div class="tile tile-hero-text reveal" id="inicio">
+      <h1 class="hero-title" id="hero-title"></h1>
+      <p class="hero-subtext" id="hero-subtext"></p>
+      <a class="btn btn-primary" href="#proyectos">
+        <span>Ver proyectos</span>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg>
+      </a>
+    </div>
+    <figure class="tile tile-hero-image reveal">
+      <img id="hero-image" src="" alt="" width="1200" height="1500" />
+    </figure>
+
+    <div class="tile tile-stats reveal" id="stats-row"></div>
+
+    <figure class="tile tile-about-image reveal">
+      <img id="about-image" src="" alt="" width="900" height="1100" />
+    </figure>
+    <div class="tile tile-about-text reveal" id="estudio">
+      <p class="eyebrow" id="about-eyebrow"></p>
+      <h2 id="about-title"></h2>
+      <p id="about-text"></p>
+    </div>
+
+    <div class="tile tile-services reveal" id="servicios">
+      <h2 class="section-title">Qué hacemos</h2>
+      <ol class="services-list" id="services-list"></ol>
+    </div>
+
+    <div class="tile tile-gallery-header reveal" id="proyectos">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="filters" id="filters"></div>
+    </div>
+
+    <div class="masonry" id="masonry"></div>
+
+    <figure class="tile tile-featured reveal" id="featured">
+      <img id="featured-image" src="" alt="" width="1600" height="900" />
+      <figcaption>
+        <p class="eyebrow" id="featured-eyebrow"></p>
+        <h3 id="featured-title"></h3>
+        <p id="featured-description"></p>
+        <p class="featured-meta" id="featured-meta"></p>
+      </figcaption>
+    </figure>
+
+    <div class="tile tile-contact reveal" id="contacto">
+      <h2>Hablemos</h2>
+      <p id="contact-cta-text"></p>
+      <ul class="contact-list" id="contact-list"></ul>
+    </div>
+
+    <div class="tile tile-footer">
+      <span class="footer-copy" id="footer-copy"></span>
+      <nav class="footer-nav" aria-label="Pie de página">
+        <ul id="footer-nav-list"></ul>
+      </nav>
+    </div>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Vista ampliada del proyecto">
+    <button class="lightbox-btn lightbox-close" id="lightbox-close" type="button" aria-label="Cerrar">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-prev" id="lightbox-prev" type="button" aria-label="Proyecto anterior">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"/></svg>
+    </button>
+    <button class="lightbox-btn lightbox-next" id="lightbox-next" type="button" aria-label="Siguiente proyecto">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="../../js/data.js" defer></script>
+  <script src="../../js/main.js" defer></script>
+</body>
+</html>

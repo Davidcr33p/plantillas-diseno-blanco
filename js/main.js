@@ -130,7 +130,7 @@
       .map((p, i) => {
         const aspect = p.size === "tall" ? "3 / 4" : p.size === "wide" ? "4 / 3" : "1 / 1";
         return `
-        <figure class="masonry-item" data-category="${p.category}" data-index="${i}" tabindex="0" role="button" aria-label="Ver proyecto ${p.title}">
+        <figure class="masonry-item" data-category="${p.category}" data-index="${i}" data-size="${p.size || "square"}" tabindex="0" role="button" aria-label="Ver proyecto ${p.title}">
           <img src="${resolveAsset(p.image)}" alt="${p.title}, ${p.category} en ${p.location}" style="aspect-ratio:${aspect}; object-fit:cover;" loading="lazy" />
           <figcaption class="masonry-caption">
             <span class="title">${p.title}</span>
