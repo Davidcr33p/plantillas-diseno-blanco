@@ -80,15 +80,17 @@ p { color: var(--ink-soft); }
 }
 .brand { display: flex; align-items: center; gap: 0.75rem; }
 .brand-mark {
-  width: 34px;
+  min-width: 34px;
   height: 34px;
+  padding-inline: 0.35rem;
   display: grid;
   place-items: center;
   background: var(--ink);
   color: var(--paper);
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
 }
 .brand-name { font-family: var(--font-display); font-weight: 500; font-size: 1rem; }
 .picker-tag {
